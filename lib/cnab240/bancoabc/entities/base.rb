@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 module CNAB240
   module BancoABC
@@ -18,7 +18,7 @@ module CNAB240
 
         private
           def white_space(range)
-            "".center(range)
+            "".center(range.to_i)
           end
 
           def prepend_zero(data, range)

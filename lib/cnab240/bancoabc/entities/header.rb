@@ -15,7 +15,29 @@ module CNAB240
           true
         end
 
-        def data; end
+        def data
+          {
+            codigo_do_banco: codigo_do_banco.strip,
+            lote_servico: lote_servico.strip,
+            tipo_servico: tipo_servico.strip,
+            uso_exclusivo_febraban_1: uso_exclusivo_febraban_1.strip,
+            tipo_inscricao_da_empresa: tipo_inscricao_da_empresa.strip,
+            numero_inscricao_da_empresa: numero_inscricao_da_empresa.strip,
+            codigo_identificacao_empresa_banco: codigo_identificacao_empresa_banco.strip,
+            nome_empresa: nome_empresa.strip,
+            nome_banco: nome_banco.strip,
+            uso_exclusivo_febraban_2: uso_exclusivo_febraban_2.strip,
+            codigo_retorno: codigo_retorno.strip,
+            data_geracao: data_geracao.strip,
+            hora_geracao: hora_geracao.strip,
+            numero_sequencial: numero_sequencial.strip,
+            numero_versao_layout: numero_versao_layout.strip,
+            desidade_gravacao_arquivo: desidade_gravacao_arquivo.strip,
+            uso_reservado_banco: uso_reservado_banco.strip,
+            uso_reservado_empresa: uso_reservado_empresa.strip,
+            uso_exclusivo_febraban_3: uso_exclusivo_febraban_3.strip
+          }
+        end
 
         def codigo_do_banco
           line[0..2]
