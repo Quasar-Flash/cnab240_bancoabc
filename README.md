@@ -2,7 +2,7 @@ CNAB240 Banco ABC Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/cnab240_bancoabc.svg)](https://badge.fury.io/rb/cnab240_bancoabc)
-[![Build Status](https://travis-ci.com/Quasar-Flash/cnab240_bancoabc.svg?branch=master)](https://travis-ci.com/Quasar-Flash/cnab240_bancoabc)
+[![cnab240_bancoabc](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml)
 
 Requirements
 -----------------
