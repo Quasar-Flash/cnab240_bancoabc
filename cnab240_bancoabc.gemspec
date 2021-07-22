@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Danilo Carolino"]
   s.email       = ["danilo.carolino@qflash.com.br"]
-  s.homepage    = "https://github.com/Quasar-Flash/cnab240-bancoabc-ruby"
+  s.homepage    = "https://github.com/Quasar-Flash/cnab240_bancoabc"
   s.summary     = "CNAB240 BancoABC lib"
   s.description = "CNAB240 BancoABC layout library"
   s.required_ruby_version = ">= 2.5"
@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/cnab240-bancoabc-ruby/blob/master/CHANGELOG.md"
-  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/cnab240-bancoabc-ruby"
-  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/cnab240-bancoabc-ruby/issues"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/cnab240_bancoabc/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/cnab240_bancoabc"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/cnab240_bancoabc/issues"
 
   s.add_development_dependency "bundler", ">= 1.2.0"
   s.add_development_dependency "fuubar", "~> 2.5.1"

@@ -2,7 +2,7 @@ CNAB240 Banco ABC Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/cnab240_bancoabc.svg)](https://badge.fury.io/rb/cnab240_bancoabc)
-[![Build Status](https://travis-ci.com/Quasar-Flash/cnab240-bancoabc-ruby.svg?branch=master)](https://travis-ci.com/Quasar-Flash/cnab240-bancoabc-ruby)
+[![Build Status](https://travis-ci.com/Quasar-Flash/cnab240_bancoabc.svg?branch=master)](https://travis-ci.com/Quasar-Flash/cnab240_bancoabc)
 
 Requirements
 -----------------
@@ -15,7 +15,7 @@ Problems?
 
 **Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
 
-Searching the [issues](https://github.com/Quasar-Flash/cnab240-bancoabc-ruby/issues) for your problem is also a good idea.
+Searching the [issues](https://github.com/Quasar-Flash/cnab240_bancoabc/issues) for your problem is also a good idea.
 
 Contributing
 -----------------
@@ -31,7 +31,7 @@ Contributing
 License
 -----------------
 
-Please see [LICENSE](https://github.com/Quasar-Flash/cnab240-bancoabc-ruby/blob/master/LICENSE.txt) for licensing details.
+Please see [LICENSE](https://github.com/Quasar-Flash/cnab240_bancoabc/blob/master/LICENSE.txt) for licensing details.
 
 Authors
 -----------------
