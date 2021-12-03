@@ -31,6 +31,7 @@ module CNAB240
             tipo_inscricao: tipo_inscricao.strip,
             numero_inscricao: numero_inscricao.strip,
             nome: nome.strip,
+            valor_de_tarifas_custas_correspondentes: valor_de_tarifas_custas_correspondentes.strip,
             motivo_ocorrencia: motivo_ocorrencia.strip
           }
         end
@@ -100,6 +101,10 @@ module CNAB240
 
         def nome
           line[148..187]
+        end
+
+        def valor_de_tarifas_custas_correspondentes
+          line[198..212]
         end
 
         def motivo_ocorrencia
