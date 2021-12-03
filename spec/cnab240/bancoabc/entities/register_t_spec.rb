@@ -21,14 +21,15 @@ describe CNAB240::BancoABC::Entities::RegisterT do
   let(:tipo_inscricao) { 1.times.map { rand(10) }.join }
   let(:numero_inscricao) { 15.times.map { rand(10) }.join }
   let(:nome) { 40.times.map { rand(10) }.join }
-  let(:nome_space) { 25.times.map { rand(10) }.join }
+  let(:nome_space) { 10.times.map { rand(10) }.join }
   let(:motivo_ocorrencia) { 10.times.map { rand(10) }.join }
+  let(:valor_de_tarifas_custas_correspondentes) { 15.times.map { rand(10) }.join }
   let(:ocorrencia) { described_class.new(line).ocorrencia }
 
   let(:line) do
     header + segmento + segmento_space + codigo_movimento + codigo_movimento_space + identificacao_do_titulo + codigo_carteira +
     numero_documento + data_vencimento + valor_titulo + numero_do_banco + agencia + digito_verificador +
-    uso_empresa + uso_empresa_space + tipo_inscricao + numero_inscricao + nome + nome_space + motivo_ocorrencia
+    uso_empresa + uso_empresa_space + tipo_inscricao + numero_inscricao + nome + nome_space + valor_de_tarifas_custas_correspondentes + motivo_ocorrencia
   end
 
   describe "#register?" do
@@ -56,6 +57,7 @@ describe CNAB240::BancoABC::Entities::RegisterT do
       tipo_inscricao: tipo_inscricao.strip,
       numero_inscricao: numero_inscricao.strip,
       nome: nome.strip,
+      valor_de_tarifas_custas_correspondentes: valor_de_tarifas_custas_correspondentes.strip,
       motivo_ocorrencia: motivo_ocorrencia
     }) }
   end
