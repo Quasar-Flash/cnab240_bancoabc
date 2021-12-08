@@ -37,3 +37,14 @@ Authors
 -----------------
 
 Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
+
+Run with Docker
+-----------------
+
+The commands bellow are used to run this project in a container.
+They use the Dockerfile at the root of the project and create a volume to update the container with the code changes you make at the outside.
+
+After every change to the source code you should do a '$rake install' in the container's bash and then you can run a new console or rspec/rubocop.
+
+$ docker build -t cnab-gem . #=>in case you didn't build the image yet
+$ docker run -it -v $(pwd):/cnab240_bancoabc cnab-gem bash #=>raises the container and keeps it open and running using a never closing foreground job (in this case, 'bash')
