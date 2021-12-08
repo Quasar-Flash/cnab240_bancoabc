@@ -33,10 +33,11 @@ License
 
 Please see [LICENSE](https://github.com/Quasar-Flash/cnab240_bancoabc/blob/master/LICENSE.txt) for licensing details.
 
-Authors
+Maintainers
 -----------------
 
-Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
+- Cícero Caiazzo, [@caiazzo14](https://github.com/caiazzo14) / [@Quasar-Flash](https://github.com/Quasar-Flash)
+- Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
 
 Run with Docker
 -----------------
