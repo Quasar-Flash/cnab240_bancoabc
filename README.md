@@ -1,8 +1,26 @@
 CNAB240 Banco ABC Library for Ruby
 ==============
 
+Build Status
+-----------------
+
 [![Gem Version](https://badge.fury.io/rb/cnab240_bancoabc.svg)](https://badge.fury.io/rb/cnab240_bancoabc)
 [![cnab240_bancoabc](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml)
+[![Quality Gate Status](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=alert_status&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Coverage](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=coverage&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Maintainability Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=sqale_rating&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+
+Project Scores
+-----------------
+
+[![Bugs](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=bugs&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Code Smells](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=code_smells&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Duplicated Lines (%)](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=duplicated_lines_density&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Lines of Code](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=ncloc&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Reliability Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=reliability_rating&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Security Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=security_rating&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Technical Debt](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=sqale_index&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
+[![Vulnerabilities](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=vulnerabilities&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
 
 Requirements
 -----------------
