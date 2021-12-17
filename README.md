@@ -4,7 +4,6 @@ CNAB240 Banco ABC Library for Ruby
 Build Status
 -----------------
 
-[![Gem Version](https://badge.fury.io/rb/cnab240_bancoabc.svg)](https://badge.fury.io/rb/cnab240_bancoabc)
 [![cnab240_bancoabc](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/cnab240_bancoabc/actions/workflows/ruby.yml)
 [![Quality Gate Status](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=alert_status&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
 [![Coverage](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_cnab240_bancoabc&metric=coverage&token=ae764c50c4edff52b7a03d970f68bc697cdc5819)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_cnab240_bancoabc)
