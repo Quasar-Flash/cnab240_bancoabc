@@ -44,7 +44,7 @@ describe CNAB240::BancoABC::Entities::RegisterT do
     it { expect(subject).to eq({
       segmento: segmento.strip,
       codigo_movimento: codigo_movimento.strip,
-      ocorrencia: ocorrencia,
+      ocorrencia:,
       identificacao_do_titulo: identificacao_do_titulo.strip,
       codigo_carteira: codigo_carteira.strip,
       numero_documento: numero_documento.strip,
@@ -58,7 +58,7 @@ describe CNAB240::BancoABC::Entities::RegisterT do
       numero_inscricao: numero_inscricao.strip,
       nome: nome.strip,
       valor_de_tarifas_custas_correspondentes: valor_de_tarifas_custas_correspondentes.strip,
-      motivo_ocorrencia: motivo_ocorrencia
+      motivo_ocorrencia:
     }) }
   end
 end
