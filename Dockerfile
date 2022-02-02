@@ -1,4 +1,4 @@
-FROM ruby:3.0
+FROM ruby:3.1
 
 WORKDIR /cnab240_bancoabc
 
@@ -13,4 +13,3 @@ RUN bundle instal --full-index
 RUN echo 'alias rspec="bundle exec rspec"' >> ~/.bashrc
 
 RUN echo 'alias rubocop="bundle exec rubocop"' >> ~/.bashrc
-

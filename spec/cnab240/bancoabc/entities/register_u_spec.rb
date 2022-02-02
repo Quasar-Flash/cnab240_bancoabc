@@ -33,17 +33,17 @@ describe CNAB240::BancoABC::Entities::RegisterU do
     subject { described_class.new(line).data }
 
     it { expect(subject).to eq({
-      segmento: segmento,
-      acrescimos: acrescimos,
-      valor_desconto: valor_desconto,
-      valor_abatimento: valor_abatimento,
-      valor_iof: valor_iof,
-      valor_pago: valor_pago,
-      valor_liquido: valor_liquido,
-      valor_outras_despesas: valor_outras_despesas,
-      valor_outros_creditos: valor_outros_creditos,
-      data_ocorrencia: data_ocorrencia,
-      data_credito: data_credito
+      segmento:,
+      acrescimos:,
+      valor_desconto:,
+      valor_abatimento:,
+      valor_iof:,
+      valor_pago:,
+      valor_liquido:,
+      valor_outras_despesas:,
+      valor_outros_creditos:,
+      data_ocorrencia:,
+      data_credito:
     }) }
   end
 end
