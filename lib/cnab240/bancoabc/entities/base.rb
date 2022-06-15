@@ -17,6 +17,7 @@ module CNAB240
         end
 
         private
+
           def white_space(range)
             "".center(range.to_i)
           end
@@ -24,9 +25,10 @@ module CNAB240
           def prepend_zero(data, range)
             return white_space(range) if data.nil?
 
-            data = data.to_s
+            data = data.to_s.strip
 
             return data if data.length == range
+            return data[0..range - 1] if data.length > range
 
             zeros_size = range - data.length
             (1..zeros_size).each { data.prepend("0") }
@@ -37,7 +39,7 @@ module CNAB240
           def append_space(data, range)
             return white_space(range) if data.nil?
 
-            data = data.to_s
+            data = data.to_s.strip
 
             return data if data.length == range
             return data[0..range - 1] if data.length > range

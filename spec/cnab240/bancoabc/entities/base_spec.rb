@@ -45,17 +45,17 @@ describe CNAB240::BancoABC::Entities::Base do
     end
 
     context "when data has the length greater than range" do
-      let(:data) { "101" }
+      let(:data) { "10" }
       let(:range) { 2 }
 
       it { expect(subject).to eq(data) }
     end
 
     context "when range has the length greater than data" do
-      let(:data) { "10" }
+      let(:data) { "010" }
       let(:range) { 3 }
 
-      it { expect(subject).to eq("#{data}") }
+      it { expect(subject).to eq(data.to_s) }
     end
   end
 

@@ -43,10 +43,6 @@ module CNAB240
           action.keys.last.to_s
         end
 
-        def operacao
-          Operacao.find_by(id_bancario: uso_empresa.strip)
-        end
-
         def segmento
           line[13]
         end

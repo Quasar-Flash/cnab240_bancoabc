@@ -8,48 +8,48 @@ module CNAB240
           true
         end
 
-        def codigo_do_banco
-          "246"
+        def codigo_do_banco(data)
+          prepend_zero(data, 3)
         end
 
-        def lote_servico
-          "0" * 4
+        def lote_servico(data)
+          prepend_zero(data, 4)
         end
 
-        def tipo_servico
-          "0"
+        def tipo_servico(data)
+          prepend_zero(data, 1)
         end
 
         def uso_exclusivo_febraban_1(data = nil)
           append_space(data, 9)
         end
 
-        def tipo_inscricao_da_empresa
-          "2"
+        def tipo_inscricao_da_empresa(data)
+          prepend_zero(data, 1)
         end
 
-        def numero_inscricao_da_empresa
-          "34218965000177"
+        def numero_inscricao_da_empresa(data)
+          prepend_zero(data, 14)
         end
 
-        def codigo_identificacao_empresa_banco
-          "00019070022307900000"
+        def codigo_identificacao_empresa_banco(data)
+          prepend_zero(data, 20)
         end
 
-        def nome_empresa
-          "QUASAR FLASH FI EM DIREITOS CM"
+        def nome_empresa(data)
+          append_space(data, 30)
         end
 
-        def nome_banco
-          "BCO ABC BRASIL#{' ' * 16}"
+        def nome_banco(data)
+          append_space(data, 30)
         end
 
         def uso_exclusivo_febraban_2(data = nil)
           append_space(data, 10)
         end
 
-        def codigo_retorno
-          "1"
+        def codigo_retorno(data)
+          prepend_zero(data, 1)
         end
 
         def data_geracao(date_time)
@@ -66,12 +66,12 @@ module CNAB240
           prepend_zero(date, 6)
         end
 
-        def numero_versao_layout
-          "040"
+        def numero_versao_layout(data)
+          prepend_zero(data, 3)
         end
 
-        def desidade_gravacao_arquivo
-          "01600"
+        def desidade_gravacao_arquivo(data)
+          prepend_zero(data, 5)
         end
 
         def uso_reservado_banco(data = nil)

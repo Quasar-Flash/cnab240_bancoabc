@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 module CNAB240
   module BancoABC
     module Entities

@@ -36,16 +36,16 @@ module CNAB240
           append_space(data, 2)
         end
 
-        def identificacao_empresa
-          "00019070022307900000"
+        def identificacao_empresa(data)
+          prepend_zero(data, 20)
         end
 
         def direcionamento_cobranca(data = nil)
           append_space(data, 1)
         end
 
-        def modalidade_cobranca
-          "0" * 3
+        def modalidade_cobranca(data = "0")
+          prepend_zero(data, 3)
         end
 
         def uso_exclusivo_abc(data = nil)
@@ -104,8 +104,8 @@ module CNAB240
           append_space(data, 2)
         end
 
-        def aceite
-          "N"
+        def aceite(data)
+          append_space(data[0], 1)
         end
 
         def data_emissao(data = nil)
@@ -158,12 +158,12 @@ module CNAB240
           prepend_zero(data, 2)
         end
 
-        def codigo_baixa_devolucao
-          "2"
+        def codigo_baixa_devolucao(data)
+          prepend_zero(data, 1)
         end
 
-        def prazo_baixa_devolucao
-          "0" * 3
+        def prazo_baixa_devolucao(data = "0")
+          prepend_zero(data, 3)
         end
 
         def codigo_moeda(data = nil)

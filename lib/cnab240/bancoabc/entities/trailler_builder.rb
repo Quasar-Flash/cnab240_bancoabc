@@ -8,28 +8,28 @@ module CNAB240
           true
         end
 
-        def codigo_banco
-          "246"
+        def codigo_banco(data = "246")
+          prepend_zero(data, 3)
         end
 
-        def lote_do_servico
-          "9" * 4
+        def lote_do_servico(data)
+          prepend_zero(data, 4)
         end
 
-        def tipo_registro
-          "9"
+        def tipo_registro(data)
+          prepend_zero(data, 1)
         end
 
-        def quantidade_lotes
-          "#{'0' * 5}1"
+        def quantidade_lotes(data = "1")
+          prepend_zero(data, 6)
         end
 
         def quantidade_registros(data = nil)
           prepend_zero(data, 6)
         end
 
-        def quantidade_contas_para_conciliacao
-          "0" * 6
+        def quantidade_contas_para_conciliacao(data = "0")
+          prepend_zero(data, 6)
         end
 
         def uso_exclusivo_febraban_1(data = nil)

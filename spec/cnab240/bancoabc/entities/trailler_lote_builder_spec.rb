@@ -10,9 +10,9 @@ describe CNAB240::BancoABC::Entities::TraillerLoteBuilder do
   end
 
   describe "#codigo_banco" do
-    subject { described_class.new.codigo_banco }
+    subject { described_class.new.codigo_banco("1234") }
 
-    it { expect(subject).to eq("246") }
+    it { expect(subject).to eq("123") }
   end
 
   describe "#lote_do_servico" do
@@ -22,19 +22,19 @@ describe CNAB240::BancoABC::Entities::TraillerLoteBuilder do
   end
 
   describe "#tipo_registro" do
-    subject { described_class.new.tipo_registro }
+    subject { described_class.new.tipo_registro("435") }
 
-    it { expect(subject).to eq("5") }
+    it { expect(subject).to eq("4") }
   end
 
   describe "#quantidade_registros_lotes" do
-    subject { described_class.new.quantidade_registros_lotes(123456) }
+    subject { described_class.new.quantidade_registros_lotes(123_456) }
 
     it { expect(subject).to eq("123456") }
   end
 
   describe "#uso_exclusivo_febraban" do
-    subject { described_class.new.uso_exclusivo_febraban(1234567890) }
+    subject { described_class.new.uso_exclusivo_febraban(1_234_567_890) }
 
     it { expect(subject).to eq("123456789") }
   end
@@ -52,7 +52,7 @@ describe CNAB240::BancoABC::Entities::TraillerLoteBuilder do
   end
 
   describe "#uso_abc" do
-    subject { described_class.new.uso_abc(123456789) }
+    subject { described_class.new.uso_abc(123_456_789) }
 
     it { expect(subject).to eq("12345678") }
   end

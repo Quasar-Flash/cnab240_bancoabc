@@ -8,16 +8,16 @@ module CNAB240
           true
         end
 
-        def banco
-          "246"
+        def banco(data = "246")
+          prepend_zero(data, 3)
         end
 
-        def lote
-          prepend_zero("0001", 3)
+        def lote(data)
+          prepend_zero(data, 4)
         end
 
-        def registro
-          "3"
+        def registro(data)
+          prepend_zero(data, 1)
         end
 
         def numero_registro(data = nil)
@@ -40,8 +40,8 @@ module CNAB240
           prepend_zero(data, 2)
         end
 
-        def tipo_impressao
-          "3"
+        def tipo_impressao(data)
+          prepend_zero(data, 1)
         end
 
         def mensagem1(data = nil)

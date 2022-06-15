@@ -3,14 +3,14 @@
 require "spec_helper"
 
 describe CNAB240::BancoABC::Entities::Trailler do
-  let(:codigo_banco) { 3.times.map { rand(10) }.join }
-  let(:lote_do_servico) { 4.times.map { rand(10) }.join }
-  let(:tipo_registro) { 1.times.map { rand(10) }.join }
-  let(:uso_exclusivo_febraban_1) { 9.times.map { rand(10) }.join }
-  let(:quantidade_lotes) { 6.times.map { rand(10) }.join }
-  let(:quantidade_registros) { 6.times.map { rand(10) }.join }
-  let(:quantidade_contas_para_conciliacao) { 6.times.map { rand(10) }.join }
-  let(:uso_exclusivo_febraban_2) { 204.times.map { rand(10) }.join }
+  let(:codigo_banco) { Array.new(3) { rand(10) }.join }
+  let(:lote_do_servico) { Array.new(4) { rand(10) }.join }
+  let(:tipo_registro) { Array.new(1) { rand(10) }.join }
+  let(:uso_exclusivo_febraban_1) { Array.new(9) { rand(10) }.join }
+  let(:quantidade_lotes) { Array.new(6) { rand(10) }.join }
+  let(:quantidade_registros) { Array.new(6) { rand(10) }.join }
+  let(:quantidade_contas_para_conciliacao) { Array.new(6) { rand(10) }.join }
+  let(:uso_exclusivo_febraban_2) { Array.new(204) { rand(10) }.join }
 
   let(:line) do
     codigo_banco + lote_do_servico + tipo_registro + uso_exclusivo_febraban_1 + quantidade_lotes +
