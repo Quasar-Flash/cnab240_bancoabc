@@ -52,7 +52,7 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#uso_exclusivo" do
-    subject { described_class.new.uso_exclusivo(31234) }
+    subject { described_class.new.uso_exclusivo(31_234) }
 
     it { expect(subject).to eq("31234               ") }
   end
@@ -64,13 +64,13 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#data_desconto_2" do
-    subject { described_class.new.data_desconto_2(820123) }
+    subject { described_class.new.data_desconto_2(820_123) }
 
     it { expect(subject).to eq("00820123") }
   end
 
   describe "#valor_desconto_2" do
-    subject { described_class.new.valor_desconto_2(820123) }
+    subject { described_class.new.valor_desconto_2(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
@@ -82,13 +82,13 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#data_desconto_3" do
-    subject { described_class.new.data_desconto_3(1234567) }
+    subject { described_class.new.data_desconto_3(1_234_567) }
 
     it { expect(subject).to eq("01234567") }
   end
 
   describe "#valor_desconto_3" do
-    subject { described_class.new.valor_desconto_3(820123) }
+    subject { described_class.new.valor_desconto_3(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
@@ -100,91 +100,91 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#data_multa" do
-    subject { described_class.new.data_multa(820123) }
+    subject { described_class.new.data_multa(820_123) }
 
     it { expect(subject).to eq("00820123") }
   end
 
   describe "#valor_multa" do
-    subject { described_class.new.valor_multa(820123) }
+    subject { described_class.new.valor_multa(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
 
   describe "#informacao_sacado" do
-    subject { described_class.new.informacao_sacado(820123) }
+    subject { described_class.new.informacao_sacado(820_123) }
 
     it { expect(subject).to eq("0000820123") }
   end
 
   describe "#mensagem_3" do
-    subject { described_class.new.mensagem_3(820123) }
+    subject { described_class.new.mensagem_3(820_123) }
 
     it { expect(subject).to eq("820123                                  ") }
   end
 
   describe "#mensagem_4" do
-    subject { described_class.new.mensagem_4(820123) }
+    subject { described_class.new.mensagem_4(820_123) }
 
     it { expect(subject).to eq("820123                                  ") }
   end
 
   describe "#uso_exclusivo" do
-    subject { described_class.new.uso_exclusivo(820123) }
+    subject { described_class.new.uso_exclusivo(820_123) }
 
     it { expect(subject).to eq("820123              ") }
   end
 
   describe "#cod_ocorrencia_sacado" do
-    subject { described_class.new.cod_ocorrencia_sacado(820123) }
+    subject { described_class.new.cod_ocorrencia_sacado(820_123) }
 
     it { expect(subject).to eq("00820123") }
   end
 
   describe "#cod_banco_conta_debito" do
-    subject { described_class.new.cod_banco_conta_debito(820123) }
+    subject { described_class.new.cod_banco_conta_debito(820_123) }
 
     it { expect(subject).to eq("820") }
   end
 
   describe "#cod_agencia_debito" do
-    subject { described_class.new.cod_agencia_debito(820123) }
+    subject { described_class.new.cod_agencia_debito(820_123) }
 
     it { expect(subject).to eq("82012") }
   end
 
   describe "#digito_verificador_agencia" do
-    subject { described_class.new.digito_verificador_agencia(820123) }
+    subject { described_class.new.digito_verificador_agencia(820_123) }
 
     it { expect(subject).to eq("8") }
   end
 
   describe "#conta_corrente_debito" do
-    subject { described_class.new.conta_corrente_debito(820123) }
+    subject { described_class.new.conta_corrente_debito(820_123) }
 
     it { expect(subject).to eq("820123      ") }
   end
 
   describe "#digito_verificador_conta" do
-    subject { described_class.new.digito_verificador_conta(820123) }
+    subject { described_class.new.digito_verificador_conta(820_123) }
 
     it { expect(subject).to eq("8") }
   end
 
   describe "#aviso_debito_automatico" do
-    subject { described_class.new.aviso_debito_automatico(2820123) }
+    subject { described_class.new.aviso_debito_automatico(2_820_123) }
 
     it { expect(subject).to eq("2") }
   end
 
   describe "#uso_exclusivo_cnab" do
-    subject { described_class.new.uso_exclusivo_cnab(2820123) }
+    subject { described_class.new.uso_exclusivo_cnab(2_820_123) }
 
     it { expect(subject).to eq("2820123  ") }
   end
 
   describe "#digito_verificador_agencia_conta" do
-    subject { described_class.new.digito_verificador_agencia_conta(2820123) }
+    subject { described_class.new.digito_verificador_agencia_conta(2_820_123) }
 
     it { expect(subject).to eq("2") }
   end

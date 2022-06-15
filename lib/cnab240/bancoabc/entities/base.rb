@@ -17,6 +17,7 @@ module CNAB240
         end
 
         private
+
           def white_space(range)
             "".center(range.to_i)
           end

@@ -21,7 +21,6 @@ describe CNAB240::BancoABC::Entities::TraillerBuilder do
     it { expect(subject).to eq("0003") }
   end
 
-
   describe "#tipo_registro" do
     subject { described_class.new.tipo_registro("98") }
 

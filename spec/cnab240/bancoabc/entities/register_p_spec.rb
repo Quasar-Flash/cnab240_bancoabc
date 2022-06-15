@@ -82,13 +82,13 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#identificacao_do_titulo" do
-    subject { described_class.new.identificacao_do_titulo(1234567) }
+    subject { described_class.new.identificacao_do_titulo(1_234_567) }
 
     it { expect(subject).to eq("1234567    ") }
   end
 
   describe "#carteira" do
-    subject { described_class.new.carteira(1234567) }
+    subject { described_class.new.carteira(1_234_567) }
 
     it { expect(subject).to eq("1") }
   end
@@ -160,25 +160,25 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#data_emissao" do
-    subject { described_class.new.data_emissao(82108431331244) }
+    subject { described_class.new.data_emissao(82_108_431_331_244) }
 
     it { expect(subject).to eq("82108431") }
   end
 
   describe "#codigo_juros_mora" do
-    subject { described_class.new.codigo_juros_mora(82108431331244) }
+    subject { described_class.new.codigo_juros_mora(82_108_431_331_244) }
 
     it { expect(subject).to eq("8") }
   end
 
   describe "#data_juros_mora" do
-    subject { described_class.new.data_juros_mora(82108431331244) }
+    subject { described_class.new.data_juros_mora(82_108_431_331_244) }
 
     it { expect(subject).to eq("82108431") }
   end
 
   describe "#juros_mora" do
-    subject { described_class.new.juros_mora(82108431331244) }
+    subject { described_class.new.juros_mora(82_108_431_331_244) }
 
     it { expect(subject).to eq("082108431331244") }
   end
@@ -196,25 +196,25 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#valor_desconto" do
-    subject { described_class.new.valor_desconto(820123) }
+    subject { described_class.new.valor_desconto(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
 
   describe "#valor_iof" do
-    subject { described_class.new.valor_iof(820123) }
+    subject { described_class.new.valor_iof(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
 
   describe "#valor_abatimento" do
-    subject { described_class.new.valor_abatimento(820123) }
+    subject { described_class.new.valor_abatimento(820_123) }
 
     it { expect(subject).to eq("000000000820123") }
   end
 
   describe "#uso_empresa_cedente" do
-    subject { described_class.new.uso_empresa_cedente(820123) }
+    subject { described_class.new.uso_empresa_cedente(820_123) }
 
     it { expect(subject).to eq("820123                   ") }
   end
@@ -279,19 +279,19 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#codigo_moeda" do
-    subject { described_class.new.codigo_moeda(31234) }
+    subject { described_class.new.codigo_moeda(31_234) }
 
     it { expect(subject).to eq("31") }
   end
 
   describe "#numero_contrato" do
-    subject { described_class.new.numero_contrato(31234) }
+    subject { described_class.new.numero_contrato(31_234) }
 
     it { expect(subject).to eq("31234     ") }
   end
 
   describe "#uso_livre" do
-    subject { described_class.new.uso_livre(31234) }
+    subject { described_class.new.uso_livre(31_234) }
 
     it { expect(subject).to eq("3") }
   end

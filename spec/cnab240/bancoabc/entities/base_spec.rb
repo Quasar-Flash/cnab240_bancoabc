@@ -55,7 +55,7 @@ describe CNAB240::BancoABC::Entities::Base do
       let(:data) { "010" }
       let(:range) { 3 }
 
-      it { expect(subject).to eq("#{data}") }
+      it { expect(subject).to eq(data.to_s) }
     end
   end
 

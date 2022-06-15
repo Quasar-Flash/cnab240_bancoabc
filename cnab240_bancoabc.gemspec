@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
   s.description = "CNAB240 BancoABC layout library"
   s.required_ruby_version = ">= 2.7"
   s.files = Dir["{lib}/**/*"] + ["LICENSE", "Rakefile", "README.md", "CHANGELOG.md"]
-  s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
   s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/cnab240_bancoabc/blob/master/CHANGELOG.md"
@@ -26,8 +25,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake", "~> 13.0.6", ">= 10.0.0"
   s.add_development_dependency "rspec", "~> 3.11.0"
   s.add_development_dependency "rubocop", "~> 1.30.1"
+  s.add_development_dependency "rubocop-i18n", "~> 3.0.0"
   s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
   s.add_development_dependency "rubocop-performance", "~> 1.14.2"
   s.add_development_dependency "rubocop-rake", "~> 0.6.0"
+  s.add_development_dependency "rubocop-rspec", "~> 2.11.1"
   s.add_development_dependency "simplecov", "~> 0.21.2"
+  s.metadata["rubygems_mfa_required"] = "true"
 end

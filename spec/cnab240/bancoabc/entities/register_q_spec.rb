@@ -52,43 +52,43 @@ describe CNAB240::BancoABC::Entities::RegisterQ do
   end
 
   describe "#uso_livre" do
-    subject { described_class.new.uso_livre(31234) }
+    subject { described_class.new.uso_livre(31_234) }
 
     it { expect(subject).to eq("31234   ") }
   end
 
   describe "#tipo_inscricao" do
-    subject { described_class.new.tipo_inscricao(31234) }
+    subject { described_class.new.tipo_inscricao(31_234) }
 
     it { expect(subject).to eq("3") }
   end
 
   describe "#numero_inscricao" do
-    subject { described_class.new.numero_inscricao(31234) }
+    subject { described_class.new.numero_inscricao(31_234) }
 
     it { expect(subject).to eq("000000000031234") }
   end
 
   describe "#nome" do
-    subject { described_class.new.nome(31234) }
+    subject { described_class.new.nome(31_234) }
 
     it { expect(subject).to eq("31234                                   ") }
   end
 
   describe "#endereco" do
-    subject { described_class.new.endereco(31234) }
+    subject { described_class.new.endereco(31_234) }
 
     it { expect(subject).to eq("31234                                   ") }
   end
 
   describe "#bairro" do
-    subject { described_class.new.bairro(31234) }
+    subject { described_class.new.bairro(31_234) }
 
     it { expect(subject).to eq("31234          ") }
   end
 
   describe "#cep" do
-    subject { described_class.new.cep(31233242342344) }
+    subject { described_class.new.cep(31_233_242_342_344) }
 
     it { expect(subject).to eq("31233") }
   end
@@ -142,7 +142,7 @@ describe CNAB240::BancoABC::Entities::RegisterQ do
   end
 
   describe "#nosso_numero_banco" do
-    subject { described_class.new.nosso_numero_banco(13948129038) }
+    subject { described_class.new.nosso_numero_banco(13_948_129_038) }
 
     it { expect(subject).to eq("13948129038         ") }
   end
