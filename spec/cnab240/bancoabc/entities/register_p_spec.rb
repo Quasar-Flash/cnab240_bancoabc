@@ -58,9 +58,9 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#identificacao_empresa" do
-    subject { described_class.new.identificacao_empresa }
+    subject { described_class.new.identificacao_empresa("00012345678901200000") }
 
-    it { expect(subject).to eq("00019070022307900000") }
+    it { expect(subject).to eq("00012345678901200000") }
   end
 
   describe "#modalidade_cobranca" do
@@ -154,7 +154,7 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#aceite" do
-    subject { described_class.new.aceite }
+    subject { described_class.new.aceite("N") }
 
     it { expect(subject).to eq("N") }
   end
@@ -267,7 +267,7 @@ describe CNAB240::BancoABC::Entities::RegisterP do
   end
 
   describe "#codigo_baixa_devolucao" do
-    subject { described_class.new.codigo_baixa_devolucao }
+    subject { described_class.new.codigo_baixa_devolucao("2") }
 
     it { expect(subject).to eq("2") }
   end

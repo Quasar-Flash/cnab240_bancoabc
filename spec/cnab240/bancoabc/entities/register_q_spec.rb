@@ -124,9 +124,9 @@ describe CNAB240::BancoABC::Entities::RegisterQ do
   end
 
   describe "#numero_inscricao_sac" do
-    subject { described_class.new.numero_inscricao_sac("SP12312314123123F") }
+    subject { described_class.new.numero_inscricao_sac("SP1231231412312") }
 
-    it { expect(subject).to eq("SP12312314123123F") }
+    it { expect(subject).to eq("SP1231231412312") }
   end
 
   describe "#nome_sac" do

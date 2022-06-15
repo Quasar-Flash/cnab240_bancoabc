@@ -10,20 +10,20 @@ describe CNAB240::BancoABC::Entities::TraillerBuilder do
   end
 
   describe "#codigo_banco" do
-    subject { described_class.new.codigo_banco }
+    subject { described_class.new.codigo_banco("0012") }
 
-    it { expect(subject).to eq("246") }
+    it { expect(subject).to eq("001") }
   end
 
   describe "#lote_do_servico" do
-    subject { described_class.new.lote_do_servico }
+    subject { described_class.new.lote_do_servico("03") }
 
-    it { expect(subject).to eq("9999") }
+    it { expect(subject).to eq("0003") }
   end
 
 
   describe "#tipo_registro" do
-    subject { described_class.new.tipo_registro }
+    subject { described_class.new.tipo_registro("98") }
 
     it { expect(subject).to eq("9") }
   end

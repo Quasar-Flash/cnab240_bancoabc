@@ -58,9 +58,9 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#cod_desconto_2" do
-    subject { described_class.new.cod_desconto_2(820123) }
+    subject { described_class.new.cod_desconto_2(1) }
 
-    it { expect(subject).to eq("820123") }
+    it { expect(subject).to eq("1") }
   end
 
   describe "#data_desconto_2" do
@@ -76,15 +76,15 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#cod_desconto_3" do
-    subject { described_class.new.cod_desconto_3(820123) }
+    subject { described_class.new.cod_desconto_3(3) }
 
-    it { expect(subject).to eq("820123") }
+    it { expect(subject).to eq("3") }
   end
 
   describe "#data_desconto_3" do
-    subject { described_class.new.data_desconto_3(820123) }
+    subject { described_class.new.data_desconto_3(1234567) }
 
-    it { expect(subject).to eq("00820123") }
+    it { expect(subject).to eq("01234567") }
   end
 
   describe "#valor_desconto_3" do
@@ -94,9 +94,9 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   end
 
   describe "#cod_multa" do
-    subject { described_class.new.cod_multa(820123) }
+    subject { described_class.new.cod_multa(5) }
 
-    it { expect(subject).to eq("820123") }
+    it { expect(subject).to eq("5") }
   end
 
   describe "#data_multa" do
@@ -174,7 +174,7 @@ describe CNAB240::BancoABC::Entities::RegisterR do
   describe "#aviso_debito_automatico" do
     subject { described_class.new.aviso_debito_automatico(2820123) }
 
-    it { expect(subject).to eq("2820123") }
+    it { expect(subject).to eq("2") }
   end
 
   describe "#uso_exclusivo_cnab" do

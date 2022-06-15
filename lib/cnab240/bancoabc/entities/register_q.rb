@@ -84,8 +84,8 @@ module CNAB240
           append_space(data, 40)
         end
 
-        def banco_correspondente
-          "0" * 3
+        def banco_correspondente(data = "0")
+          prepend_zero(data, 3)
         end
 
         def nosso_numero_banco(data = nil)
