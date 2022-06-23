@@ -52,7 +52,7 @@ module CNAB240
           prepend_zero(data, 20)
         end
 
-        def nome_empresa
+        def nome_empresa(data)
           prepend_zero(data, 30)
         end
 
