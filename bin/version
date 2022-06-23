@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require "cnab240/bancoabc/version"
+require_relative "../lib/cnab240/bancoabc/version"
 
 puts ::CNAB240::BancoABC::VERSION

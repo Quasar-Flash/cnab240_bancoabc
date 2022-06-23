@@ -62,6 +62,11 @@ Style/RedundantReturn:
   Enabled: true
   AllowMultipleReturnValues: true # allows "return x, y"
 
+# Packaging
+
+Packaging/RequireRelativeHardcodingLib:
+  Enabled: false
+
 # To reactivate!
 RSpec/NamedSubject:
   Enabled: false

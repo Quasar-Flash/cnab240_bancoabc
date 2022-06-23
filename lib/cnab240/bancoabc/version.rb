@@ -9,6 +9,6 @@ module CNAB240
     # Major - Incremented for incompatible changes with previous release (or big enough new features)
     # Minor - Incremented for new backwards-compatible features + deprecations
     # Patch - Incremented for backwards-compatible bug fixes
-    VERSION = "1.1.0"
+    VERSION = "1.2.0"
   end
 end

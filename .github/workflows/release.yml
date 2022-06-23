@@ -40,7 +40,7 @@ jobs:
         run: gem push --key github --host https://rubygems.pkg.github.com/Quasar-Flash ${{ steps.vars.outputs.project_name }}-${{ steps.vars.outputs.project_version }}.gem
       - name: Get Changelog Entry
         id: changelog_reader
-        uses: mindsers/changelog-reader-action@v2
+        uses: mindsers/changelog-reader-action@v2.0.0
         with:
           validation_depth: 10
           version: ${{ steps.vars.outputs.project_version }}
