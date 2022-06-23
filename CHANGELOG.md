@@ -7,11 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-06-23
+
+### Added
+
+- Testing workflow
+- Release automatization by workflows
+- Implements SEMVER changelog pattern
+
+### Changed
+
+- [QC-278](https://qflash.atlassian.net/browse/QC-278) Dinamiza os parâmetros para montar as entidades #19
+
 ## [1.1.0] - 2022-02-02
 
 ### Changed
 
-- [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
+- [QC-79](https://qflash.atlassian.net/browse/QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]
 - Bump Ruby version to v3.1.0
 
@@ -19,7 +31,7 @@ Reduzir uso de pipelines em projetos Ruby [Dependabot]
 
 ### Added
 
-- Criar débito de Tarifa para custas de Cartório [PL #11](https://github.com/Quasar-Flash/cnab240_bancoabc/pull/11) [QCedente 1324](https://gitlab.com/quasar_flash/flash/-/issues/1324)
+- Criar débito de Tarifa para custas de Cartório #11
 
 ## [0.1.0] - 2021-05-11
 
