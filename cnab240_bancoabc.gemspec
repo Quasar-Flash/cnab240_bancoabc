@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", "~> 3.13.0"
   s.add_development_dependency "rubocop", "~> 1.75.3"
   s.add_development_dependency "rubocop-i18n", "~> 3.2.3"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
+  s.add_development_dependency "rubocop-packaging", "~> 0.6.0"
   s.add_development_dependency "rubocop-performance", "~> 1.24.0"
   s.add_development_dependency "rubocop-rake", "~> 0.7.1"
   s.add_development_dependency "rubocop-rspec", "~> 3.5.0"
