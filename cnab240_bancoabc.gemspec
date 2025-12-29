@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/cnab240_bancoabc/issues"
 
   s.add_development_dependency "bundler", "~> 2.3", ">= 2.3.0"
-  s.add_development_dependency "pry", "~> 0.15.0"
+  s.add_development_dependency "pry", "~> 0.16.0"
   s.add_development_dependency "rake", ">= 10.0.0", "~> 13.3.0"
   s.add_development_dependency "rspec", "~> 3.13.0"
   s.add_development_dependency "rubocop", "~> 1.80.0"
